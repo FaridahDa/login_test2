@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<div class="container">
+
+  <form class="form-signin" method="POST" action="/signup">
+    <h2 class="form-signin-heading">Sign Up</h2>
+    {{ form.hidden_tag() }}
+    {{ wtf.RegistrationForm(form.title) }}
+    {{ wtf.form_field(form.first_name) }}
+    {{ wtf.form_field(form.last_name }}
+      {{ wtf.form_field(form.contact_number) }}
+      {{ wtf.form_field(form.Address) }}
+      {{ wtf.form_field(form.post_code) }}
+      {{ wtf.form_field(form.city) }}
+      {{ wtf.form_field(form.account_number) }}
+      {{ wtf.form_field(form.sort_code) }}
+      {{ wtf.form_field(form.password) }}
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+  </form>
+
+</div> <!-- /container -->
+
+
+
+
+</div>
+</body>
+</html>
